@@ -1,3 +1,3 @@
 # SQL-test
-#datatable: 'user'. 
-#colums: uname, firstname, lastname, password, ID. ID-increment automatically, password-MD5
+<br>Datatable: 'user'. 
+<br>Colums: uname, firstname, lastname, password, ID. ID-increment automatically, password-MD5
