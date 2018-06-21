@@ -6,6 +6,8 @@ $test=$_POST['username'];
 $test1=$_POST['firstname'];
 $test2=$_POST['lastname'];
 $test3=$_POST['password'];
+$test4=$_POST['password2'];
+$test5=$_POST['email'];
 
 if(ctype_alnum($test)){ 
 //echo "<br>username accept";
@@ -15,33 +17,39 @@ $result=mysqli_query($conn, $query);
 $num=mysqli_num_rows($result);
 
 
-if ($num == 0)
+if($test3 != $test4){
+echo "Confirm password does not match password";
+}
+
+
+if ($num == 0 && $test3 == $test4)
 {
 echo "<br>search result: $num; username $test is not in use";
-$sql = "INSERT INTO `rzheng`.`user`(`uname`,`firstname`, `lastname`, `password`)
-VALUES ('$test', '$test1', '$test2','$test3')";
+$sql = "INSERT INTO `rzheng`.`user`(`uname`,`firstname`, `lastname`, `password`, `email`)
+VALUES ('$test', '$test1', '$test2','$test3','$test5')";
 
 if ($conn->query($sql) === TRUE) {
     echo "<br>******New user created successfully.******";
-} else {
+}else {
     echo "Error: " . $sql . "<br>The test data added already<br>" . $conn->error;
 }
 
+
+
 //display results
-$sql = "SELECT `ID`, `firstname`, `lastname` FROM `rzheng`.`user`";
+$sql = "SELECT `ID`, `firstname`, `lastname`,`email` FROM `rzheng`.`user`";
 $result = $conn->query($sql);
-if ($result->num_rows > 0) {
+if ($result->num_rows > 0 && $test3 == $test4) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br>id: " . $row["ID"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+        echo "<br>id: " . $row["ID"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. " " . $row["email"] . "<br>";
     }
 } else {
     echo "0 results";
 }
 
-}else
-{
-echo "<br>search result: $num; username in use";
+}elseif ($result->num_rows > 0){
+echo "<br>Search result: $num; username in use";
 }
 }else{
 echo "<br>username: must contain all letters or digits";
@@ -63,3 +71,4 @@ echo "<br>lastname: must contain all letters or digits";
 
 
 ?>
+
