@@ -1,4 +1,8 @@
 # SQL-test
+<br>6/21/2018
+<br>updated test.php and register.php
+<br>Added password confirmation and email data input
+
 <br>6/13/2018
 <br>All codes are tested and fully working when upload
 <br>Data table: 'user'. 
