@@ -1,4 +1,8 @@
 # SQL-test
+<br>6/28/2018
+<br>Created login page with password confirmation
+<br>login.php and LoginC.php need to be together
+
 <br>6/21/2018
 <br>updated test.php and register.php
 <br>Added password confirmation and email data input
