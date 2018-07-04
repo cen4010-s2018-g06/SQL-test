@@ -1,4 +1,7 @@
 # SQL-test
+<br>7/3/2018
+<br>Added more features to login page
+
 <br>6/28/2018
 <br>Created login page with password confirmation
 <br>login.php and LoginC.php need to be together
