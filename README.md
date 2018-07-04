@@ -3,6 +3,7 @@
 
 <br>7/3/2018
 <br>Added more features to login page
+<br>Uploaded message.php, a sample code for message board
 
 <br>6/28/2018
 <br>Created login page with password confirmation
