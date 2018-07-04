@@ -1,4 +1,6 @@
 # SQL-test
+<br> To test, use fowllowing link: http://lamp.cse.fau.edu/~rzheng/login.php
+
 <br>7/3/2018
 <br>Added more features to login page
 
