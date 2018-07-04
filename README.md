@@ -1,5 +1,8 @@
 # SQL-test
 <br> To test, use fowllowing link: http://lamp.cse.fau.edu/~rzheng/login.php
+<br>7/4/2018
+<br>Updated message.php and index.php
+<br>Sample message board code for test purposes
 
 <br>7/3/2018
 <br>Added more features to login page
