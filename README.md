@@ -1,5 +1,7 @@
 # SQL-test
-<br> To test, use fowllowing link: http://lamp.cse.fau.edu/~rzheng/login.php
+<br> To test login, use fowllowing link: http://lamp.cse.fau.edu/~rzheng/login.php
+<br> To test message, use fowllowing link: http://lamp.cse.fau.edu/~rzheng/message.php
+
 <br>7/4/2018
 <br>Updated message.php and index.php
 <br>Sample message board code for test purposes
